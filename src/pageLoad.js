@@ -20,8 +20,17 @@ const createHeader = () => {
     return headerContainer;
 }
 
+const createMainContent = () => {
+    const mainContainer = document.createElement('div');
+    mainContainer.classList.add('main');
+
+    return mainContainer;
+}
+
 const initialLoad = () => {
-    document.querySelector('#content').appendChild(createHeader());
+    const content = document.querySelector('#content');
+    content.appendChild(createHeader());
+    content.appendChild(createMainContent());
 }
 
 export default initialLoad;
