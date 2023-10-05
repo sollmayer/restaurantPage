@@ -1,4 +1,4 @@
-export const populateHomePage = () => {
+const createHomePage = () => {
     const homeContainer = document.createElement('div')
     const homeTitle = document.createElement('h1')
     const description = document.createElement('p')
@@ -9,4 +9,10 @@ export const populateHomePage = () => {
     homeContainer.appendChild(description)
 
     return homeContainer;
+}
+
+export const loadHomePage = () => {
+    const mainContainer = document.querySelector('.main');
+    mainContainer.textContent = "";
+    mainContainer.appendChild(createHomePage());
 }

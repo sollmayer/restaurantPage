@@ -1,4 +1,4 @@
-export const populateContactPage = () => {
+const createContactPage = () => {
     const contactContainer = document.createElement('div');
     const contactTitle = document.createElement('h1');
     const description = document.createElement('p');
@@ -9,4 +9,10 @@ export const populateContactPage = () => {
     contactContainer.appendChild(contactTitle);
     contactContainer.appendChild(description);
     return contactContainer;
+}
+
+export const loadContactPage = () => {
+    const mainContainer = document.querySelector('.main');
+    mainContainer.textContent = "";
+    mainContainer.appendChild(createContactPage());
 }

@@ -1,4 +1,4 @@
-export const populateMenuPage = () => {
+const createMenuPage = () => {
     const menuContainer = document.createElement('div')
     const menuTitle = document.createElement('h1')
     const description = document.createElement('p')
@@ -9,4 +9,10 @@ export const populateMenuPage = () => {
     menuContainer.appendChild(description)
 
     return menuContainer;
+}
+
+export const loadMenuPage = () => {
+    const mainContainer = document.querySelector('.main');
+    mainContainer.textContent = "";
+    mainContainer.appendChild(createMenuPage());
 }
