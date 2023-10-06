@@ -7,11 +7,14 @@ const createMenuPage = () => {
 
     menuContainer.appendChild(menuTitle)
     menuContainer.appendChild(description)
-
+    menuContainer.classList.add('menu');
+    
     return menuContainer;
 }
 
 export const loadMenuPage = () => {
+    document.querySelectorAll('.header button').forEach(btn => btn.classList.remove('active'))
+    document.querySelector('.Menu').classList.add('active');
     const mainContainer = document.querySelector('.main');
     mainContainer.textContent = "";
     mainContainer.appendChild(createMenuPage());

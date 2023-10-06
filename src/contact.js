@@ -8,10 +8,14 @@ const createContactPage = () => {
 
     contactContainer.appendChild(contactTitle);
     contactContainer.appendChild(description);
+    contactContainer.classList.add('contact');
+
     return contactContainer;
 }
 
 export const loadContactPage = () => {
+    document.querySelectorAll('.header button').forEach(btn => btn.classList.remove('active'))
+    document.querySelector('.Contact').classList.add('active');
     const mainContainer = document.querySelector('.main');
     mainContainer.textContent = "";
     mainContainer.appendChild(createContactPage());

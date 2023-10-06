@@ -46,6 +46,7 @@ const initialLoad = () => {
     const content = document.querySelector('#content');
     content.appendChild(createHeader());
     content.appendChild(createMainContent());
+    loadHomePage();
 }
 
 export default initialLoad;
