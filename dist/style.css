@@ -3,19 +3,73 @@
     margin: 0;
 }
 body {
-    background-color: rgb(231, 231, 231);
+    /* background-color: rgb(231, 231, 231); */
+    background: url('./img/restaurant-front.jpg');
+    background-size: cover;
+    /* overflow-y: hidden;  */
+}
+.main {
+    /* overflow-y: scroll; */
+    color: white;
+}
+.main .home {
+    /* border: 0.1rem solid blue; */
+    width: 40rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.main .home h1 {
+    font-style: italic;
+    font-size: 4rem;
+    margin-bottom: 0.6rem;
+}
+.home, .menu,.contact{
+    /* background: url('./img/restaurant-front.jpg');
+    background-size: cover; */
+    height: 100vh;
 }
 .header {
     position: sticky;
     top: 0;
-    background-color: rgba(19, 77, 128, 0.533);
+    background-color: rgb(2, 36, 65);
     padding: 1rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color:white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header div {
     display: flex;
     gap: 2rem;
+}
+
+.header button {
+    border: none;
+    width: 6rem;
+    height: 2rem;
+    background-color: transparent;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+button.active {
+    border-bottom: 0.2rem solid white;
+}
+.home button {
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+    background-color: chocolate;
+    color: white;
 }
