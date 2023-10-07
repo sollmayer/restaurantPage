@@ -2,12 +2,18 @@ const createContactPage = () => {
     const contactContainer = document.createElement('div');
     const contactTitle = document.createElement('h1');
     const description = document.createElement('p');
+    const contactPhone = document.createElement('p')
+    const contactFeedback = document.createElement('button')
 
-    contactTitle.textContent = "CONTACT";
-    description.textContent = "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    contactTitle.textContent = "CONTACT US";
+    description.textContent = "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+    contactPhone.textContent = 'Phone Number: +100000000000';
+    contactFeedback.textContent = 'Send Feedback';
 
     contactContainer.appendChild(contactTitle);
     contactContainer.appendChild(description);
+    contactContainer.appendChild(contactPhone);
+    contactContainer.appendChild(contactFeedback);
     contactContainer.classList.add('contact');
 
     return contactContainer;
